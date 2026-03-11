@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ─── Inloggningsskärm ─── -->
+<div id="login-wrap" class="login-wrap">
+  <div class="login-box">
+    <div class="login-logo">🔐</div>
+    <h2>Admin-panel</h2>
+    <p>Logga in för att redigera webbplatsens innehåll.</p>
+    <form id="login-form">
+      <div class="form-group">
+        <label class="form-label">Lösenord</label>
+        <input
+          type="password"
+          class="form-input"
+          id="login-password"
+          autocomplete="current-password"
+          placeholder="••••••••"
+          autofocus>
+      </div>
+      <div id="login-error" class="login-error"></div>
+      <div style="margin-top:1.25rem">
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+          Logga in
+        </button>
+      </div>
+    </form>
+    <p style="margin-top:1.5rem; font-size:0.78rem; color:var(--muted); text-align:center;">
+      Standardlösenord: <code style="color:var(--accent2)">admin123</code><br>
+      Byt det under Inställningar efter inloggning.
+    </p>
+    <div style="margin-top:1.5rem; text-align:center;">
+      <a href="index.html" style="color:var(--muted); font-size:0.82rem; text-decoration:none;">
+        ← Tillbaka till webbplatsen
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ─── Admin-panel (dold tills inloggad) ─── -->
+<div id="admin-wrap" style="display:none">
+
+  <nav>
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">mitt<span>.</span>portfolio</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Start</a></li>
+        <li><a href="projekt.html">Projekt</a></li>
+        <li><a href="treserva.html">Treserva</a></li>
+        <li><a href="matilda.html">Matilda</a></li>
+        <li><a href="pix.html">PIX</a></li>
+        <li><a href="webben.html">Webben</a></li>
+        <li><a href="admin.html" class="nav-admin active">Admin</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Öppna meny">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="3" y1="6"  x2="19" y2="6"/>
+          <line x1="3" y1="11" x2="19" y2="11"/>
+          <line x1="3" y1="16" x2="19" y2="16"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="admin-wrap">
+    <div class="admin-header">
+      <h1>Admin-panel</h1>
+      <p>Redigera titlar, texter, bilder och videos för varje sida.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs" id="admin-tabs"></div>
+
+    <!-- Panels -->
+    <div id="admin-panels"></div>
+  </div>
+
+</div>
+
+<script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webben</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">mitt<span>.</span>portfolio</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Start</a></li>
+      <li><a href="projekt.html">Projekt</a></li>
+      <li><a href="treserva.html">Treserva</a></li>
+      <li><a href="matilda.html">Matilda</a></li>
+      <li><a href="pix.html">PIX</a></li>
+      <li><a href="webben.html">Webben</a></li>
+      <li><a href="admin.html" class="nav-admin">Admin</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Öppna meny">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+        <line x1="3" y1="6"  x2="19" y2="6"/>
+        <line x1="3" y1="11" x2="19" y2="11"/>
+        <line x1="3" y1="16" x2="19" y2="16"/>
+      </svg>
+    </button>
+  </div>
+</nav>
+
+<main>
+  <div class="content-hero">
+    <div class="breadcrumb">
+      <a href="index.html">Start</a>
+      <span class="breadcrumb-sep">/</span>
+      <a href="projekt.html">Projekt</a>
+      <span class="breadcrumb-sep">/</span>
+      <span>Webben</span>
+    </div>
+    <div class="eyebrow fade-up" id="page-eyebrow">Webb</div>
+    <h1 class="page-title fade-up delay-1" id="page-title">Webben</h1>
+    <p class="page-subtitle fade-up delay-2" id="page-subtitle">
+      Information om webbutvecklingen.
+    </p>
+  </div>
+
+  <!-- Bild -->
+  <div class="page-image-wrap" id="page-image-wrap" style="display:none">
+    <div class="page-image-container" id="page-image-container"></div>
+  </div>
+
+  <!-- Innehåll -->
+  <div class="content-body fade-up delay-2" id="page-content"></div>
+
+  <!-- Video -->
+  <div class="page-video-wrap" id="page-video-wrap" style="display:none">
+    <div class="video-container" id="page-video-container"></div>
+  </div>
+
+  <div class="section" style="padding-top:0">
+    <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+      <a href="pix.html"     class="btn btn-secondary">← PIX</a>
+      <a href="projekt.html" class="btn btn-secondary">Alla projekt</a>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 · Byggt med HTML, CSS &amp; JavaScript</p>
+</footer>
+
+<a href="admin.html" class="edit-hint">✏️ Redigera sida</a>
+
+<script src="js/main.js"></script>
+<script>loadPage('webben');</script>
+</body>
+</html>
