@@ -212,7 +212,8 @@ main { padding-top: var(--nav-h); position: relative; z-index: 1; }
   overflow: hidden; border: 1px solid var(--border);
 }
 .page-image-container img {
-  width: 100%; height: auto; display: block;
+  max-width: 320px; height: auto; display: block;
+  margin: 0 auto;
 }
 
 /* ─── Video ─── */
