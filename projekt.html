@@ -7,90 +7,43 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div id="nav"></div>
 
-<nav>
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">mitt<span>.</span>portfolio</a>
-    <ul class="nav-links">
-      <li><a href="index.html">Start</a></li>
-      <li><a href="projekt.html">Projekt</a></li>
-      <li><a href="treserva.html">Treserva</a></li>
-      <li><a href="matilda.html">Matilda</a></li>
-      <li><a href="pix.html">PIX</a></li>
-      <li><a href="webben.html">Webben</a></li>
-      <li><a href="admin.html" class="nav-admin">Admin</a></li>
-    </ul>
-    <button class="nav-toggle" aria-label="Öppna meny">
-      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-        <line x1="3" y1="6"  x2="19" y2="6"/>
-        <line x1="3" y1="11" x2="19" y2="11"/>
-        <line x1="3" y1="16" x2="19" y2="16"/>
-      </svg>
-    </button>
-  </div>
-</nav>
-
-<main>
-  <div class="content-hero">
-    <div class="breadcrumb">
-      <a href="index.html">Start</a>
-      <span class="breadcrumb-sep">/</span>
-      <span>Projekt</span>
+  <main>
+    <div class="page-header">
+      <div class="breadcrumb"><a href="index.html">Start</a><span>/</span>Projekt</div>
+      <span class="label">Översikt</span>
+      <h1>Projekt</h1>
+      <p>Utforska mina projekt och digitala produkter.</p>
     </div>
-    <div class="eyebrow fade-up" id="page-eyebrow">Översikt</div>
-    <h1 class="page-title fade-up delay-1" id="page-title">Projekt</h1>
-    <p class="page-subtitle fade-up delay-2" id="page-subtitle">
-      Utforska mina projekt och digitala produkter.
-    </p>
-  </div>
 
-  <!-- Bild -->
-  <div class="page-image-wrap" id="page-image-wrap" style="display:none">
-    <div class="page-image-container" id="page-image-container"></div>
-  </div>
-
-  <!-- Innehåll -->
-  <div class="content-body fade-up delay-2" id="page-content"></div>
-
-  <!-- Video -->
-  <div class="page-video-wrap" id="page-video-wrap" style="display:none">
-    <div class="video-container" id="page-video-container"></div>
-  </div>
-
-  <!-- Projektkort -->
-  <div class="section">
-    <div class="cards-grid">
-      <a href="treserva.html" class="card">
-        <div class="card-title">Treserva Mobil-app</div>
-        <div class="card-desc">En mobilapplikation anpassad för Treserva-systemet.</div>
-        <div class="card-arrow">Läs mer →</div>
-      </a>
-      <a href="matilda.html" class="card">
-        <div class="card-title">Matilda</div>
-        <div class="card-desc">Information och beskrivning av Matilda-projektet.</div>
-        <div class="card-arrow">Läs mer →</div>
-      </a>
-      <a href="pix.html" class="card">
-        <div class="card-title">PIX</div>
-        <div class="card-desc">Information och beskrivning av PIX-projektet.</div>
-        <div class="card-arrow">Läs mer →</div>
-      </a>
-      <a href="webben.html" class="card">
-        <div class="card-title">Webben</div>
-        <div class="card-desc">Webbutveckling och digitala lösningar.</div>
-        <div class="card-arrow">Läs mer →</div>
-      </a>
+    <div class="wrap-wide">
+      <div class="cards">
+        <a href="treserva.html" class="card">
+          <h3>Treserva Mobil-app</h3>
+          <p>En mobilapplikation anpassad för Treserva-systemet.</p>
+          <span class="arrow">Läs mer →</span>
+        </a>
+        <a href="matilda.html" class="card">
+          <h3>Matilda</h3>
+          <p>Information och beskrivning av Matilda-projektet.</p>
+          <span class="arrow">Läs mer →</span>
+        </a>
+        <a href="pix.html" class="card">
+          <h3>PIX</h3>
+          <p>Information och beskrivning av PIX-projektet.</p>
+          <span class="arrow">Läs mer →</span>
+        </a>
+        <a href="webben.html" class="card">
+          <h3>Webben</h3>
+          <p>Webbutveckling och digitala lösningar.</p>
+          <span class="arrow">Läs mer →</span>
+        </a>
+      </div>
     </div>
-  </div>
-</main>
+  </main>
 
-<footer>
-  <p>© 2025 · Byggt med HTML, CSS &amp; JavaScript</p>
-</footer>
-
-<a href="admin.html" class="edit-hint">✏️ Redigera sida</a>
-
-<script src="js/main.js"></script>
-<script>loadPage('projekt');</script>
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
 </body>
 </html>
