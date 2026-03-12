@@ -118,6 +118,12 @@ main { padding-top: var(--nav-h); }
   font-size: 1rem; color: var(--muted);
   line-height: 1.85; margin-bottom: 1.125rem;
 }
+.content strong { color: var(--text); font-weight: 600; }
+.content ul {
+  margin: 0 0 1.125rem 1.25rem; color: var(--muted);
+  font-size: 1rem; line-height: 1.85;
+}
+.content ul li { margin-bottom: 0.375rem; }
 
 /* ── Bild ── */
 .page-img {
